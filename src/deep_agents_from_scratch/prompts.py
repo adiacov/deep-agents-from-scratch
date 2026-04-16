@@ -69,7 +69,21 @@ Parameters:
 - file_path (required): Path where the file should be created/overwritten
 - content (required): The complete content to write to the file
 
-Important: This replaces the entire file content."""
+Important: This replaces the entire file content.
+Very Important: Provide the file_path argument when calling this tool.
+
+When using write_file, ALWAYS provide:
+{
+  "file_path": "<destination path>",
+  "content": "<text>"
+}
+
+Example:
+{
+   "file_path": "/home/user/research/mcp_definition.md",
+   "content": "The MCP (Model Connect Protocol) is a standardized way for agents to connect to governed servers..."
+}
+"""
 
 FILE_USAGE_INSTRUCTIONS = """You have access to a virtual file system to help you retain and save context.
 
